@@ -112,7 +112,7 @@ delete '/payloads/:id' do
     # Get the id from params
     id = params["id"].to_i
     # Delete the item
-    payloads = payloads.delete_at(id)
+    payload = payloads.delete_at(id)
     # Return the deleted item as json
-    return payloads.to_json
+    return payload.to_json
 end
