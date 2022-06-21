@@ -47,3 +47,7 @@ get '/multiple-sinatra-json' do
     json "text" => "Aluminium", "symbol" => "Al", "state" => "solid", "electronegativiy" => 1.61, "oxid-state" => 3
 end
 
+# Get params from url path
+get '/user-info/:name' do 
+    "Hello #{params["name"]}!"
+end
